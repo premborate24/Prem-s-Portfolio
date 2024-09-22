@@ -1,0 +1,24 @@
+body{
+  min-height: 10vh;
+}
+
+.background {
+  position: fixed;
+  background-image: url('./assets/images/background.png'); /* Use url() */
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+
+  
+  
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+}

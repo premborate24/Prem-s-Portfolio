@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.achi-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #101010;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin-top: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.achi-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.highlight {
+    color: #FFBA08;
+}
+
+.subtext {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #A9A9A9;
+}
+
+.badge {
+    background-color: rgba(0, 102, 255, 0.2);
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: #007bff;
+}
+
+.description {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+b {
+    font-weight: 600;
+    color: #FFD700;
+}
+
+.achi-image {
+    flex-shrink: 0;
+}
+
+.achi-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
