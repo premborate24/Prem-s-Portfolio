@@ -3,7 +3,7 @@ import './profile.css';
 import profiles from '../assets/images/profiles.jpg'
 
 function Profile() {
-    const displayText = "I do Code, Design & Chill 🍿";
+   
 
     return (
         <div className="profile-container">
@@ -11,12 +11,12 @@ function Profile() {
                 <img src={profiles} alt="Profile Image" className="profile-image" />
             </div>
             <div className="profile-text">
-                <h2>Prem Borate</h2>
+                <h2 className="h2" >Prem Borate</h2>
                 <p className="chill-text">
-                    I do Code, Design & 
+                       I do Code, Design &   
                     <span className="gradient-text"> Chill</span> 🍿
                 </p>
-                <p className="description">
+                <p className="descript">
                     Passionate Front-end Engineer with a focus on React development dedicated to crafting elegant and user-friendly web applications.
                 </p>
             </div>
