@@ -1,4 +1,3 @@
-import React from "react";
 import "./connect.css";
 import insta from "../assets/images/insta.png";
 import linkedin from "../assets/images/linkedin.png";
