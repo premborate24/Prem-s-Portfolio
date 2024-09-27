@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import Navbar from './components/navbar';
 import Profile from './components/profile';
@@ -6,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Achi from './components/achi';
 import ProjectCarousel from '../src/components/projects';
-import Project from './components/projects';
 import Stack from './components/tech-stack';
 import About from './components/about';
 import Connect from './components/connect'

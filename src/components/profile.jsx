@@ -1,4 +1,3 @@
-import React from "react";
 import Typing from 'react-typing-effect';
 import './profile.css';
 import profiles from '../assets/images/profiles.jpg';
