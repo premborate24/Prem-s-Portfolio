@@ -1,0 +1,87 @@
+/* src/components/project.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  position: relative;
+}
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.carousel-item {
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item:hover {
+  transform: scale(1.2); /* Slightly scale up the card on hover */
+}
+
+.carousel-image {
+  width: 100%;
+  max-width: 300px; /* Adjust the max width for card size */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.carousel-item:hover .carousel-image {
+  transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.project-name {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none; /* Remove underline */
+}
+
+.project-name:hover {
+    
+  color: #6c63ff; /* Optional: Change color on hover */
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #9d9c9c; /* Default color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #6c63ff; /* Highlighted dot color */
+}
+
+.slick-prev, .slick-next {
+  font-size: 0;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 20px;
+  color: #333;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}

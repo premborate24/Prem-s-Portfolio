@@ -1,52 +1,54 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-
 .profile-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
-  
+  margin-top: 1px;
+  z-index: 10;
 }
 
 .backcircle {
-  position: absolute;
-  top: 50px; 
-  width: 300px;
-  height: 300px;
+  width: 70vw; /* Responsive width */
+  max-width: 270px;
+  height: auto; /* Maintain aspect ratio */
   border-radius: 50%;
   background-color: rgba(26, 26, 26, 1);
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 25px auto;
+  margin-top: 0;
 }
 
 .profile-image {
   width: 93%; 
-  height: 93%; 
+  height: auto; /* Maintain aspect ratio */
   border-radius: 50%; 
   padding: 2px;
- 
 }
 
 .profile-text {
   text-align: center;
-  margin-top: 220px; 
+  margin-top: 1px; 
   color: white;
-  max-width: 650px;
+  max-width: 50vw; /* Responsive max width */
 }
 
-h2 {
+.h2 {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 3.5rem; /* Responsive */
   margin-bottom: 0;
 }
 
 .chill-text {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 1.75rem; /* Responsive */
+  margin: 0;
   white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .gradient-text {
@@ -55,11 +57,53 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
-.description {
-  margin-top: 10px;
+.descript {
+  margin-top: 8px;
   font-family: "Poppins", sans-serif;
   font-weight: 400; 
-  font-size: 22px;
-  max-width: 600px;
+  font-size: 1.25rem; /* Responsive */
+  max-width: 90vw; /* Responsive max width */
   line-height: 1.5;
+}
+/* Letter pull-up animation */
+@keyframes pull-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.h2, .chill-text, .descript {
+  overflow: hidden; /* Ensures the text stays within its container */
+}
+
+.letter-animation {
+  display: inline-block;
+  transform: translateY(100%);
+  animation: pull-up 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+.h2 .letter-animation:nth-child(odd) {
+  animation-delay: 0.05s;
+}
+.h2 .letter-animation:nth-child(even) {
+  animation-delay: 0.1s;
+}
+
+.chill-text .letter-animation:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+.chill-text .letter-animation:nth-child(even) {
+  animation-delay: 0.15s;
+}
+
+.descript .letter-animation:nth-child(odd) {
+  animation-delay: 0.15s;
+}
+.descript .letter-animation:nth-child(even) {
+  animation-delay: 0.2s;
 }

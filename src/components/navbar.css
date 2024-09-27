@@ -1,34 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-.navbar{
-   
+.navbar {
   padding: 20px; 
-  position: fixed; 
-  width: 95%;  top: 0;
+  position: relative; 
+  width: 95%;  
+  top: 0;
   display: flex;
   justify-content: space-between; 
-  padding-top: 20px;
-  padding-bottom: 20px;
+}
 
-  
-}
-   
-.about-button{
+.about-button, .contact-button {
   font-family: 'Poppins', sans-serif;
-    background-color: white;
-    color: black;
-    width: fit-content;
-    height: fit-content;
-    padding: 8px;
-    margin-right: 20px;
-   
+  margin-left: 20px;
+  padding: 8px;
+  border-radius: 15px; /* Add border-radius for aesthetics */
 }
-.contact-button{
-  font-family: 'Poppins', sans-serif;
-    background-color: black;
-    color: white;
-    width: fit-content;
-    height: fit-content;
-    padding: 8px;
-    border: 1px solid white;
+
+.about-button {
+  background-color: white;
+  color: black;
+}
+
+.contact-button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack buttons on smaller screens */
+    align-items: center;
+  }
 }
