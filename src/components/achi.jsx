@@ -30,7 +30,7 @@ function Achi() {
         <div className="achi-container">
           <div className="achi-text1">
             <h2>
-              SIH-2023 <span className="highlight">/ IDE Bootcamp / Best Presentation Award 🏆</span>
+            IDE Bootcamp, Noida<span className="highlight"> / Best Presentation Award 🏆</span>
             </h2>
             <p className="subtext">
               <span>(An entrepreneur Bootcamp organized By Indian Ministry of Education)</span>

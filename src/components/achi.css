@@ -1,111 +1,143 @@
 body, html {
-    height: 100%;
-    margin: 0;
-    margin-top: 20px;
-    font-family: 'Poppins', sans-serif;
-  }
-  
+  height: 100%;
+  margin: 0;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.achi-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* Increased padding for more vertical space */
+  border-radius: 15px;
+  width: 75vw; /* Adjusted width for better alignment */
+  height: 300px; /* Increased container height */
+  margin: 30px auto;
+  margin-bottom: 0; /* Reduced the gap between containers */
+  color: white;
+}
+
+/* Text container */
+.achi-text, .achi-text1 {
+  flex: 1;
+  margin: 0 50px; /* Spacing between text and image */
+}
+
+.headi {
+  color: white;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+
+.subt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+  background: linear-gradient(90deg, #9C83FF, #FF9051);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  margin-top: 0;
+  letter-spacing: 2px;
+}
+
+/* Highlighted text */
+.highlight {
+  color: #FFBA08;
+}
+
+.subtext {
+  margin-top: 5px;
+  font-size: 0.85rem; /* Slightly increased font size */
+  color: #A9A9A9;
+  margin-left: 20px;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 85vw; /* Responsive */
+}
+
+b {
+  font-weight: 600;
+  color: #FFD700;
+}
+
+/* Image container */
+.achi-image {
+  flex-shrink: 0;
+  width: 75%; /* Slightly wider image */
+  max-width: 300px;
+  margin: 0 15px; /* Adjusted spacing around image */
+}
+
+.achi-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease-in-out; /* Smooth hover effect */
+}
+
+.achi-image img:hover {
+  transform: scale(1.5); /* Scale on hover */
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 5px;
+}
+
+/* Container wrapper for responsiveness */
+.container-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
   .achi-container {
-    display: flex;
-    flex-direction: row; /* Changed to column for better responsiveness */
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-   
-    border-radius: 15px;
-    max-width: 90vw; 
-    margin: 10px auto;
-    color: white;
-    height: auto; /* Adjusted for responsiveness */
-  }
-  
-  .achi-text, .achi-text1 {
-    flex: 1;
-    margin: 0 10px; /* Consistent margins */
-  }
-  
-  .headi {
-    color: white;
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    font-weight: semibold;
-    font-size: 2.5rem; /* Responsive */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .parent {
-    display: flex; 
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    margin: 50px 0 30px;
+    width: 90vw;
+    height: auto; /* Adjust height for mobile view */
   }
-  
-  .subt {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    font-size: 1.125rem; /* Responsive */
-    background: linear-gradient(90deg, #9C83FF, #FF9051);
-    background-size: 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-    margin-top: 0;
-    letter-spacing: 2px;
-  }
-  
-  .highlight {
-    color: #FFBA08;
-  }
-  
-  .subtext {
-    margin-top: 5px; 
-    font-size: 0.75rem; /* Responsive */
-    color: #A9A9A9;
-    margin-left: 20px;
-  }
-  
-  .description {
-    margin-top: 10px;
-    font-size: 1rem; /* Responsive */
-    line-height: 1.4;
-    max-width: 90vw; /* Responsive */
-  }
-  
-  b {
-    font-weight: 600;
-    color: #FFD700;
-  }
-  
+
   .achi-image {
-    flex-shrink: 0;
-    width: 80%; /* Responsive */
-    max-width: 300px; /* Maintain max size */
-  }
-  
-  .achi-image img {
+    max-width: 250px;
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
-  
+
   h2 {
-    font-size: 1.5rem; /* Responsive */
-    font-weight: 700;
-    margin: 5px;
+    font-size: 1.25rem;
   }
-  
-  .container-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+  .description {
+    font-size: 1rem;
   }
-  
+}

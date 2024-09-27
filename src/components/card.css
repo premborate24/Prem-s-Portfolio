@@ -1,0 +1,45 @@
+.card{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    border: 1px solid rgb(84, 84, 84);
+    margin-left: 70px;
+    margin-bottom: 30px;
+    color: white;
+    font-family: poppins,sans-serif;
+    padding: 7px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.card:hover {
+    transform: scale(1.05);
+    background-color: white; /* Change to white on hover */
+    color: rgb(0, 0, 0); /* Change text color */
+     /* Move entire card upward */
+    z-index: 1; /* Bring card to the front */
+    cursor: pointer;
+}
+
+.stack{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    margin: 30px;
+    margin-left: 70px;
+}
+.log{
+height: 80px;
+width: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.skill-name{
+    font-size: 20px;
+    margin: 0;
+    margin-left: 6px;
+    margin-top: 3px;
+}

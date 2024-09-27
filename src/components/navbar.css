@@ -9,8 +9,9 @@
 
 .about-button, .contact-button {
   font-family: 'Poppins', sans-serif;
+  margin-left: 20px;
   padding: 8px;
-  border-radius: 5px; /* Add border-radius for aesthetics */
+  border-radius: 15px; /* Add border-radius for aesthetics */
 }
 
 .about-button {

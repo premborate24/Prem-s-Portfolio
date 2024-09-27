@@ -65,3 +65,45 @@
   max-width: 90vw; /* Responsive max width */
   line-height: 1.5;
 }
+/* Letter pull-up animation */
+@keyframes pull-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.h2, .chill-text, .descript {
+  overflow: hidden; /* Ensures the text stays within its container */
+}
+
+.letter-animation {
+  display: inline-block;
+  transform: translateY(100%);
+  animation: pull-up 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+.h2 .letter-animation:nth-child(odd) {
+  animation-delay: 0.05s;
+}
+.h2 .letter-animation:nth-child(even) {
+  animation-delay: 0.1s;
+}
+
+.chill-text .letter-animation:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+.chill-text .letter-animation:nth-child(even) {
+  animation-delay: 0.15s;
+}
+
+.descript .letter-animation:nth-child(odd) {
+  animation-delay: 0.15s;
+}
+.descript .letter-animation:nth-child(even) {
+  animation-delay: 0.2s;
+}
