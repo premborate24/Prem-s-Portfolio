@@ -1,4 +1,4 @@
-import './Achi.css';
+import './achi.css';
 import image from '../assets/images/team.jpg'; // Update with correct image path
 import image1 from '../assets/images/noida.jpg'
 
