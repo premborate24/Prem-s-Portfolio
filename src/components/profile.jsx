@@ -1,4 +1,3 @@
-import Typing from 'react-typing-effect';
 import './profile.css';
 import profiles from '../assets/images/profiles.jpg';
 
@@ -13,12 +12,7 @@ function Profile() {
                 <p className="chill-text">
                     I do Code, Design &{' '}
                     <span className="gradient-text">
-                        <Typing
-                            text={["Chill"]}
-                            speed={900}
-                          
-                            className="typing-effect"
-                        />
+                     Chill
                     </span> 🍿
                 </p>
                 <p className="descript">
