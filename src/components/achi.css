@@ -4,55 +4,49 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* Increased padding for more vertical space */
   border-radius: 15px;
-  width: 75vw; /* Adjusted width for better alignment */
-  height: 300px; /* Increased container height */
+  width: 75vw; 
+  height: auto; /* Removed fixed height */
   margin: 30px auto;
-  margin-bottom: 20; /* Reduced the gap between containers */
+  padding: 20px; /* Added padding for spacing */
   color: white;
 }
 
 /* Text container */
 .achi-text, .achi-text1 {
   flex: 1;
-  margin: 0 50px; /* Spacing between text and image */
+  margin: 0 20px; /* Adjusted margin for spacing */
 }
 
+/* Headings and Subheadings */
 .headi {
   color: white;
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 2.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center; /* Centered text */
 }
 
 .parent {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 
-
 .subt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.125rem;
   background: linear-gradient(90deg, #9C83FF, #FF9051);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-weight: bold;
-  margin-top: 0;
+  margin-top: 10px;
   letter-spacing: 2px;
+  text-align: center; /* Centered text */
 }
 
 /* Highlighted text */
@@ -60,18 +54,19 @@
   color: #FFBA08;
 }
 
+/* Subtext */
 .subtext {
-  margin-top: 5px;
-  font-size: 0.85rem; /* Slightly increased font size */
+  margin-top: 10px;
+  font-size: 0.85rem; 
   color: #A9A9A9;
-  margin-left: 20px;
 }
 
+/* Description text */
 .description {
   margin-top: 10px;
   font-size: 1.1rem;
   line-height: 1.5;
-  max-width: 85vw; /* Responsive */
+  max-width: 85vw;
 }
 
 b {
@@ -82,9 +77,10 @@ b {
 /* Image container */
 .achi-image {
   flex-shrink: 0;
-  width: 75%; /* Slightly wider image */
+  width: 100%; /* Adjusted to full width */
   max-width: 300px;
-  margin: 0 15px; /* Adjusted spacing around image */
+  margin: 10px auto; /* Centered image with auto margin */
+  text-align: center; /* Center image inside container */
 }
 
 .achi-image img {
@@ -93,17 +89,19 @@ b {
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: transform 0.4s ease-in-out; /* Smooth hover effect */
+  transition: transform 0.4s ease-in-out;
 }
 
 .achi-image img:hover {
-  transform: scale(1.5); /* Scale on hover */
+  transform: scale(1.25); /* Reduced scale on hover */
 }
 
+/* Main Heading */
 h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 5px;
+  margin: 10px 0;
+  text-align: center; /* Centered headings */
 }
 
 /* Container wrapper for responsiveness */
@@ -118,21 +116,39 @@ h2 {
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
   .achi-container {
-    flex-direction: column;
+    flex-direction: column; /* Stacked layout for mobile */
     width: 90vw;
     height: auto; /* Adjust height for mobile view */
+    padding: 20px; /* Padding for mobile view */
+    margin: 20px auto; /* Margin for mobile view */
   }
 
   .achi-image {
-    max-width: 250px;
-    width: 100%;
+    max-width: 100%; /* Full width image */
+    width: 100%; 
+    margin: 10px 0; /* Adjusted margin for spacing */
+  }
+
+  .achi-text, .achi-text1 {
+    margin: 0 10px; /* Reduced margin for mobile */
+    text-align: center; /* Center text */
   }
 
   h2 {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Reduced font size */
   }
 
   .description {
-    font-size: 1rem;
+    font-size: 1rem; /* Reduced font size for description */
+    margin: 0 auto; /* Centered text */
+  }
+
+  .subt {
+    font-size: 1rem; /* Reduced font size */
+  }
+
+  .subtext {
+    font-size: 0.8rem; /* Reduced font size */
+    text-align: center; /* Centered text */
   }
 }
