@@ -1,4 +1,5 @@
 .achi-container {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -8,7 +9,7 @@
   width: 75vw; /* Adjusted width for better alignment */
   height: 300px; /* Increased container height */
   margin: 30px auto;
-  margin-bottom: 0; /* Reduced the gap between containers */
+  margin-bottom: 20; /* Reduced the gap between containers */
   color: white;
 }
 
@@ -30,6 +31,7 @@
 }
 
 .parent {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
