@@ -21,25 +21,25 @@ const ProjectCarousel = () => {
       id: 1,
       name: 'Evently',
       image: evently,
-      link: 'https://evently.com'
+      link: 'https://github.com/premborate24/Evently.git'
     },
     {
       id: 2,
       name: 'Jalank',
       image: jalank,
-      link: 'https://todolist.com'
+      link: 'https://github.com/premborate24/JalAnk-v2.git'
     },
     {
       id: 3,
       name: 'Portfolio',
       image: portfolio,
-      link: 'https://portfolio.com'
+      link: 'https://github.com/premborate24/Prem-s-Portfolio.git'
     },
     {
       id: 4,
       name: 'To-Do List',
       image: todolist,
-      link: 'https://portfolio.com'
+      link: 'https://github.com/premborate24/Tick-Mark.git'
     },
   ];
 
@@ -48,13 +48,13 @@ const ProjectCarousel = () => {
       id: 1,
       name: 'Evently',
       image: eventlyUi,
-      link: 'https://evently-ui.com'
+      link: 'https://www.figma.com/design/UcmU9e7hiGmnQOsVQMChNi/login?node-id=0-1&node-type=canvas&t=uxDFC4CY32hAdlQP-0'
     },
     {
       id: 2,
       name: 'Jalank',
       image: jalankUi,
-      link: 'https://jalank-ui.com'
+      link: 'https://www.figma.com/design/lIpnq5jzuF2f4DutMu1cj3/JalAnk?node-id=0-1&t=DubOO8TkvwH2tklq-1'
     },
     {
       id: 3,
@@ -66,19 +66,19 @@ const ProjectCarousel = () => {
       id: 4,
       name: 'To Do List',
       image: ToDoListUi,
-      link: 'https://todo-ui.com'
+      link: 'https://www.figma.com/design/ulbCU9zmPOxTshM2HUT5IR/To-Do-List?node-id=0-1&t=WK8nIH4EFdzcuYCx-1'
     },
     {
       id: 5,
       name: 'Online Negotiation Engine',
       image: OnlineNegotiationEngine,
-      link: 'https://online-negotiation-engine.com'
+      link: 'https://www.figma.com/design/d5Tg3WOUMVb8nzF8IVa00E/Online-Negotiation-Engine?node-id=0-1&t=64cVq4ZozvVKods8-1'
     },
     {
       id: 6,
       name: 'JalAnk 2.0',
       image: jalank2ui,
-      link: 'https://jalank2-ui.com'
+      link: 'https://www.figma.com/design/epYctPVFgzVUShz7izskd5/JalAnk-2.0?node-id=0-1&t=p0eKxssKTrOHp1QV-1'
     },
   ];
 
